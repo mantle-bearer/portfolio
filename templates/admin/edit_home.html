@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Home Page</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    
+    <label for="title">Title:</label>
+    {{ form.title(class="form-control") }}
+    
+    <label for="subtitle">Subtitle:</label>
+    {{ form.subtitle(class="form-control") }}
+    
+    <label for="cv_url">CV Download URL:</label>
+    {{ form.cv_url(class="form-control") }}
+    
+    <button type="submit" class="btn btn-primary">Update Home Page</button>
+</form>
+
+<a href="{{ url_for('admin.dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+{% endblock %}

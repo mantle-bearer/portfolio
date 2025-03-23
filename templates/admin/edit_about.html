@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit About Me</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <label for="description">Description:</label>
+    {{ form.description(class="form-control") }}
+    
+    <label for="experience_years">Years of Experience:</label>
+    {{ form.experience_years(class="form-control") }}
+    
+    <label for="clients">Clients:</label>
+    {{ form.clients(class="form-control") }}
+    
+    <label for="working_hours">Working Hours:</label>
+    {{ form.working_hours(class="form-control") }}
+    
+    <label for="awards">Awards Won:</label>
+    {{ form.awards(class="form-control") }}
+    
+    <button type="submit" class="btn btn-primary">Update About Me</button>
+</form>
+
+<a href="{{ url_for('admin.dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% block about %}
+{% extends "base.html" %}
+{% block content %}
+<h2>About Me</h2>
+<p>{{ about_me.description }}</p>
+<ul>
+    <li>{{ about_me.experience_years }} years of experience</li>
+    <li>{{ about_me.clients }} satisfied clients</li>
+    <li>{{ about_me.working_hours }} working hours</li>
+    <li>{{ about_me.awards }} awards won</li>
+</ul>
+{% endblock %}
+{% endblock %}

@@ -1,0 +1,9 @@
+Flask==3.0.0
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.0.5
+Flask-WTF==1.2.1
+Flask-Login==0.6.3
+Flask-Bcrypt==1.0.1
+Psycopg2==2.9.9
+python-dotenv==1.0.1
+Pydantic==2.5.3

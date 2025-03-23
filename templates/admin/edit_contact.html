@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Contact Information</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    
+    <label for="email">Email:</label>
+    {{ form.email(class="form-control") }}
+    
+    <label for="phone">Phone Number:</label>
+    {{ form.phone(class="form-control") }}
+    
+    <label for="address">Address:</label>
+    {{ form.address(class="form-control") }}
+    
+    <button type="submit" class="btn btn-primary">Update Contact Info</button>
+</form>
+
+<a href="{{ url_for('admin.dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+{% endblock %}

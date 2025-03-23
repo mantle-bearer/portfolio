@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Services</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    
+    <label for="title">Service Title:</label>
+    {{ form.title(class="form-control") }}
+    
+    <label for="description">Description:</label>
+    {{ form.description(class="form-control") }}
+    
+    <label for="icon">Icon (FontAwesome class or image URL):</label>
+    {{ form.icon(class="form-control") }}
+    
+    <button type="submit" class="btn btn-primary">Update Service</button>
+</form>
+
+<a href="{{ url_for('admin.dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+{% endblock %}

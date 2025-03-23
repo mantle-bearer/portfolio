@@ -1,0 +1,27 @@
+/* Admin CSS (static/css/admin.css) */
+.admin-header {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.admin-nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-nav a:hover {
+    text-decoration: underline;
+}
+
+.admin-panel {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

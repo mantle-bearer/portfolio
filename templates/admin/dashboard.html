@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Admin Dashboard</h2>
+<p>Welcome, Admin! Use the links below to edit website content:</p>
+<ul>
+    <li><a href="{{ url_for('admin.edit_home') }}">Edit Home Page</a></li>
+    <li><a href="{{ url_for('admin.edit_about') }}">Edit About Me</a></li>
+    <li><a href="{{ url_for('admin.edit_services') }}">Edit Services</a></li>
+    <li><a href="{{ url_for('admin.edit_portfolio') }}">Edit Portfolio</a></li>
+    <li><a href="{{ url_for('admin.edit_blog') }}">Edit Blog</a></li>
+    <li><a href="{{ url_for('admin.edit_contact') }}">Edit Contact Info</a></li>
+    <li><a href="{{ url_for('admin.logout') }}">Logout</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,8 @@
+{% block home %}
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ content.title }}</h1>
+<p>{{ content.subtitle }}</p>
+<a href="{{ content.cv_url }}" class="btn">Download CV</a>
+{% endblock %}
+{% endblock %}

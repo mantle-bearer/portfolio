@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Portfolio</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    
+    <label for="title">Project Title:</label>
+    {{ form.title(class="form-control") }}
+    
+    <label for="image_url">Image URL:</label>
+    {{ form.image_url(class="form-control") }}
+    
+    <label for="description">Project Description:</label>
+    {{ form.description(class="form-control") }}
+    
+    <button type="submit" class="btn btn-primary">Update Portfolio</button>
+</form>
+
+<a href="{{ url_for('admin.dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+{% endblock %}

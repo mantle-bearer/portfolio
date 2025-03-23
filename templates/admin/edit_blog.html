@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Blog</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}
+    
+    <label for="title">Post Title:</label>
+    {{ form.title(class="form-control") }}
+    
+    <label for="image_url">Image URL:</label>
+    {{ form.image_url(class="form-control") }}
+    
+    <label for="content">Content:</label>
+    {{ form.content(class="form-control", rows=5) }}
+    
+    <button type="submit" class="btn btn-primary">Update Blog Post</button>
+</form>
+
+<a href="{{ url_for('admin.dashboard') }}" class="btn btn-secondary">Back to Dashboard</a>
+{% endblock %}
