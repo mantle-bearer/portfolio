@@ -1,3 +1,55 @@
-
 Francis _ Portfolio.html
+# Ignore system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment
+venv/
 .env
+*.env
+
+# Ignore Flask cache, logs, and temporary files
+instance/
+*.log
+cache/
+logs/
+tmp/
+sessions/
+
+# Ignore database files (if using SQLite)
+*.sqlite3
+*.db
+
+# Ignore compiled files
+*.pyc
+*.pyo
+*.class
+*.exe
+*.dll
+
+# Ignore Node.js dependencies (if using frontend tools)
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Ignore migrations (only keep versioned files)
+migrations/
+!migrations/versions/
+
+# Ignore Alembic migration cache
+alembic.ini
+
+# Ignore unnecessary macOS files
+*.DS_Store
+
+# Ignore minified assets (if you're regenerating them)
+*.min.js
+*.min.css
