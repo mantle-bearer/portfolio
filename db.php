@@ -3,8 +3,8 @@
 $host = 'aws-0-eu-central-1.pooler.supabase.com';
 $port = '5432';
 $dbname = 'postgres';
-$user = 'postgres.gldbjvxwlxxykaqwyeiq';
-$password = '7518815';
+$user = 'postgres.gldbjkxalxzynaqkpeiqc';
+$password = '1234567';
 
 try {
     // Create a new PDO instance
